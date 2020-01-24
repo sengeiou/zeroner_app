@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iwown.my_module.widget.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/top_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/connected_x2"/>
+            <TextView android:textSize="16dp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/device_module_ble_connect_statue_1"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="120dp">
+            <ImageView android:id="@+id/app_connect_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:src="@mipmap/app_connect_x3" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/connect_line_x2" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/target_platform_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60dp" android:src="@mipmap/strava_connect_x3" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="15dp" android:textColor="@android:color/white" android:gravity="left" android:id="@+id/strava_desc1" android:paddingLeft="10sp" android:paddingRight="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="@string/my_module_strava_desc"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/strava_notice1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+            <TextView android:layout_gravity="center_vertical" android:background="@drawable/small_filled_cycle" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="15dp"/>
+            <TextView android:textSize="15dp" android:textColor="@android:color/white" android:gravity="left" android:layout_gravity="center_vertical" android:id="@+id/connected_desc_1" android:paddingLeft="10sp" android:paddingRight="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_module_strava_notice1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/strava_notice2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:layout_gravity="center_vertical" android:background="@drawable/small_filled_cycle" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="15dp"/>
+            <TextView android:textSize="15dp" android:textColor="@android:color/white" android:gravity="left" android:layout_gravity="center_vertical" android:id="@+id/connected_desc_2" android:paddingLeft="10sp" android:paddingRight="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_module_strava_notice2"/>
+        </LinearLayout>
+        <Button android:textSize="20dp" android:textColor="@color/white" android:id="@+id/strava_authorize" android:background="@drawable/roundbutton_lightblue" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="140dp" android:text="@string/strava_connect"/>
+        <Button android:textSize="20dp" android:textColor="@color/white" android:id="@+id/strava_unauthorize" android:background="@drawable/roundbutton_darkblue" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="140dp" android:text="@string/my_module_strava_disconnect"/>
+    </LinearLayout>
+</com.iwown.my_module.widget.CustomScrollView>

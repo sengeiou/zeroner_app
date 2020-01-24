@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_tab_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/buttom_bar_group" android:layout_alignParentTop="true"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/buttom_bar_group" android:background="@color/app_common_background" android:layout_width="match_parent" android:layout_height="52dp" android:layout_alignParentBottom="true">
+        <RelativeLayout style="@style/ButtomBar">
+            <com.iwown.healthy.view.ImageBtn android:id="@+id/button_sport" android:contentDescription="@string/app_name" app:app_imageResouse="@mipmap/data_on" app:app_imageText="@string/tab_name_sport" app:app_imageTextColor="@color/device_module_title_bar_color" style="@style/ButtomBarImgBtn"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/ButtomBar">
+            <com.iwown.healthy.view.ImageBtn android:id="@+id/button_device" android:contentDescription="@string/app_name" app:app_imageResouse="@mipmap/device_on" app:app_imageText="@string/tab_name_device" app:app_imageTextColor="@color/device_module_title_bar_color" style="@style/ButtomBarImgBtn"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/ButtomBar">
+            <com.iwown.healthy.view.ImageBtn android:id="@+id/button_my" android:contentDescription="@string/app_name" app:app_imageResouse="@mipmap/profile_on" app:app_imageText="@string/profile_page_title" app:app_imageTextColor="@color/device_module_title_bar_color" style="@style/ButtomBarImgBtn"/>
+            <View android:id="@+id/feedback_auxiliary" android:layout_width="4dp" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/service_back_img" android:visibility="invisible" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginLeft="9dp" android:layout_marginTop="6dp" android:src="@drawable/service_back_shape" android:layout_toRightOf="@+id/feedback_auxiliary"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/rect_change_no_corners" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="140dp">
+    <ImageView android:id="@+id/bracel_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bracelet_3x_1" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:id="@+id/center_content_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_toRightOf="@+id/bracel_iv" android:layout_centerVertical="true">
+        <TextView android:textSize="20dp" android:textColor="@color/white" android:id="@+id/band_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/band_name_tv" android:layout_alignLeft="@+id/band_name_tv">
+            <ImageView android:id="@+id/dot_iv" android:background="@drawable/green_dot" android:visibility="visible" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginTop="8dp" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/connect_state_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/device_module_ble_connect_statue_2" android:layout_toRightOf="@+id/dot_iv" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/battery_iv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@mipmap/battery60" android:layout_toRightOf="@+id/connect_state_tv" android:layout_centerVertical="true"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/battery_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/battery_iv" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

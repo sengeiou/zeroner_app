@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/item_rl" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp">
+        <TextView android:textSize="17dp" android:textColor="@color/device_module_white" android:id="@+id/device_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/connect_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/enter_right_3x" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="17dp" android:textColor="@color/device_module_white" android:id="@+id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/connect_iv" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/device_module_common_line_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/device_module_dip_size_10" android:layout_below="@+id/item_rl"/>
+</RelativeLayout>

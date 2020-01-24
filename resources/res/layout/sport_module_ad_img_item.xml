@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="12dp" android:paddingTop="18dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="228dp">
+    <ImageView android:id="@+id/ad_main_img" android:background="@mipmap/test_ad_img" android:layout_width="wrap_content" android:layout_height="210dp" android:minWidth="355dp"/>
+</LinearLayout>

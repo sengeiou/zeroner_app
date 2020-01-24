@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:background="@color/device_module_common_background" android:paddingLeft="16dp" android:paddingTop="15dp" android:paddingRight="16dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp">
+    <ImageView android:id="@+id/imag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/title_3x" android:layout_centerVertical="true"/>
+    <EditText android:textSize="17dp" android:textColor="@color/device_module_common_text_color" android:textColorHint="@color/device_module_common_text_edit_hint" android:id="@+id/title_edit" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:hint="@string/device_module_title" android:layout_toRightOf="@+id/imag"/>
+</RelativeLayout>

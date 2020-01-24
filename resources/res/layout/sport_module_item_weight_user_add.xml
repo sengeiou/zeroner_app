@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cl_user" android:padding="@dimen/dip_size_5" android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginTop="@dimen/dip_size_10">
+    <ImageView android:id="@+id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:gravity="center" android:id="@+id/tv_icon" android:background="@drawable/weight_user_add" android:layout_width="45dp" android:layout_height="45dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip_size_10" android:text="@string/sport_module_weight_add_text" app:layout_constraintBottom_toBottomOf="@+id/tv_icon" app:layout_constraintStart_toEndOf="@+id/tv_icon" app:layout_constraintTop_toTopOf="@+id/tv_icon"/>
+</android.support.constraint.ConstraintLayout>

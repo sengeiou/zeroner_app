@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/month_layout" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+    <TextView android:textSize="16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginRight="5dp" android:text="7th April"/>
+    <ImageView android:id="@+id/month_img" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/sport_calendar"/>
+</LinearLayout>

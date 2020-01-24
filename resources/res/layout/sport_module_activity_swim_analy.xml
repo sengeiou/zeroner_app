@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/sport_module_081024" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout android:id="@+id/top_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/title_bar" android:paddingTop="5dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@mipmap/back3x"/>
+            <TextView android:textSize="17dp" android:textColor="@android:color/white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+    <TextView android:textSize="16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/load_txt" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/data_acquisition"/>
+    <com.iwown.sport_module.device_data.AmapScrollView android:id="@+id/amap_scrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/sport_add_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.iwown.sport_module.device_data.AmapScrollView>
+</LinearLayout>

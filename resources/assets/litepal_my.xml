@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="my_module"></dbname>
+
+    <version value="4"></version>
+
+    <list>
+        <mapping class="com.iwown.my_module.data.UserInfoEntity"></mapping>
+        <mapping class="com.iwown.my_module.data.HealthGoalEntity"></mapping>
+        <mapping class="com.iwown.my_module.feedback.data.TB_feedback"></mapping>
+        <mapping class="com.iwown.my_module.data.TB_data_import"></mapping>
+    </list>
+</litepal>

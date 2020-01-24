@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/kuaidianwo" android:layout_width="match_parent" android:layout_height="45dp" android:text="快点我快点我"/>
+    <com.iwown.sport_module.device_data.AmapScrollView android:id="@+id/my_test_scrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="350dp">
+                <com.amap.api.maps.TextureMapView android:id="@+id/test_map_view" android:layout_width="match_parent" android:layout_height="match_parent" app:uiRotateGestures="false" app:uiTiltGestures="false"/>
+            </LinearLayout>
+            <com.iwown.sport_module.view.Item2TopRecyclerview android:id="@+id/test_run_rcy" android:background="@color/sport_module_0A1636" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </com.iwown.sport_module.device_data.AmapScrollView>
+</LinearLayout>

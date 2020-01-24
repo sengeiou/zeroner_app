@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.iwown.sport_module.view.CircleProgressBar android:id="@+id/circle_bar" android:layout_width="45dp" android:layout_height="45dp" android:layout_centerVertical="true" app:sport_module_circle_thick="4dp" app:sport_module_progress0_color="@android:color/holo_blue_bright" app:sport_module_complete_color="@android:color/holo_green_light"/>
+    <TextView android:textSize="30dp" android:id="@+id/target" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="10000" android:includeFontPadding="false" android:layout_toRightOf="@+id/circle_bar"/>
+    <RelativeLayout android:id="@+id/rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/target" android:layout_alignLeft="@+id/target">
+        <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/step"/>
+        <TextView android:textSize="14dp" android:id="@+id/complete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="800" android:includeFontPadding="false" android:layout_toRightOf="@+id/icon"/>
+        <TextView android:textSize="14dp" android:id="@+id/complete_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="steps" android:includeFontPadding="false" android:layout_toRightOf="@+id/complete" android:layout_alignBottom="@+id/complete"/>
+    </RelativeLayout>
+</RelativeLayout>

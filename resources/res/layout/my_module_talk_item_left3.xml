@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/talk_left22x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginRight="110dp">
+    <TextView android:textSize="15dp" android:textColor="@android:color/white" android:id="@+id/item_left3_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_unsolved_msg"/>
+    <TextView android:textSize="16dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/item_feedback_bt" android:background="@drawable/my_module_talk_btbg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="2dp" android:layout_marginTop="10dp" android:layout_marginRight="2dp" android:minWidth="150dp" android:text="@string/my_module_feedback_title"/>
+</LinearLayout>

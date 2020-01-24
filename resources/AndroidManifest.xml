@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="135" android:versionName="6.0.0.77(ECG_WATCH)" package="com.healthy.zeroner_pro" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+    <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="27"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <application android:theme="@style/AppTheme_1" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.iwown.healthy.MyApplication" android:screenOrientation="portrait" android:testOnly="false" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCfXq7cwx1LVw-bjfKhraMONnlkfxvZpjA"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="016396885f0c2f1fb470f842d0eed3da"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <activity android:name="com.iwown.healthy.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Splash" android:name="com.iwown.healthy.LoadingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.iwown.healthy.TimeService"/>
+        <service android:name="com.iwown.device_module.device_message_push.NotificationMonitor" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" android:enabled="true" android:exported="true">
+            <intent-filter android:priority="9999">
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.bugly.beta.ui.BetaActivity" android:configChanges="locale|keyboardHidden|orientation|screenSize"/>
+        <provider android:name="com.iwown.healthy.utils.BuglyFileProvider" android:exported="false" android:authorities="com.healthy.zeroner_pro.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:name="com.iwown.sport_module.ui.utils.GenericFileProvider" android:exported="false" android:authorities="com.healthy.zeroner_pro.my.package.name.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths2"/>
+            <meta-data android:name="com.amap.api.v2.apikey" android:value="016396885f0c2f1fb470f842d0eed3da"/>
+        </provider>
+        <activity android:theme="@style/sport_module_AppTheme" android:name="com.iwown.sport_module.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.weight.WeightShowActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/sport_module_AppTheme" android:name="com.iwown.sport_module.ui.sleep.SleepShowActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/sport_module_AppTheme" android:name="com.iwown.sport_module.activity.ActiveActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.sleep.SleepErrorFeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.fatigue.FatigueActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.heart.HeartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.weight.activity.BindMacOKActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.weight.QuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.weight.activity.WifiConfigurationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.weight.activity.WifiInputAcitvity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.weight.activity.WifiS2ConfigingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.weight.activity.ConfigExceptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.zxing.activity.CaptureActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.iwown.sport_module.gps.activity.GpsTargetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.gps.activity.RunPrepareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.gps.activity.MapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.gps.activity.LockScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.gps.activity.ShowMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.gps.activity.SwipeBackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.gps.activity.SportDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.activity.ShowAdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.DataDownloadActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.iwown.sport_module.service.DataNetService"/>
+        <service android:name="com.iwown.sport_module.gps.service.GpsGoogleService"/>
+        <service android:name="com.iwown.sport_module.gps.service.GpsGoogleNewService"/>
+        <service android:name="com.iwown.sport_module.gps.GpsAmapService"/>
+        <activity android:name="com.iwown.sport_module.ui.weight.activity.MunalBindMacActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.activity.BaseRunActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.activity.MapRunActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.gps.ShowAmapMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.activity.NotificationHintActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.ecg.EcgActivity"/>
+        <activity android:name="com.iwown.sport_module.ui.ecg.EcgActivity1"/>
+        <activity android:name="com.iwown.sport_module.ui.ecg.EcgHorizontalScreenActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.iwown.sport_module.ui.ecg.ai.EcgAiAnalysisActivity"/>
+        <activity android:name="com.iwown.sport_module.ui.ecg.ai.EcgAiAnalysisResultActivity"/>
+        <activity android:name="com.iwown.sport_module.ui.blood.BloodShowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.activity.SwimAnalyseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.sport_module.ui.af.AfActivity"/>
+        <activity android:name="com.iwown.sport_module.ui.af.AfDescriptionActivity"/>
+        <receiver android:name="com.iwown.device_module.device_message_push.CallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="com.iwown.ACTION_PHONE_STATUE_OUT"/>
+                <action android:name="com.iwown.ACTION_PHONE_NORINGING"/>
+                <action android:name="com.iwown.ACTION_PHONE_ANSWER_RING"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.iwown.device_module.device_message_push.SmsReceiver" android:permission="android.permission.BROADCAST_SMS" android:priority="2147483647">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.provider.Telephony.SMS_DELIVER"/>
+                <action android:name="com.qiku.android.action.NEW_MESSAGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.iwown.device_module.device_message_push.heart.HeartService" android:enabled="true"/>
+        <service android:name="com.iwown.device_module.device_firmware_upgrade.dwonloadBiz.DownloadService" android:enabled="true" android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="DownloadService"/>
+            </intent-filter>
+        </service>
+        <service android:label="@string/app_name" android:name="com.iwown.device_module.device_firmware_upgrade.service.IwownFotaService"/>
+        <service android:name="com.iwown.device_module.device_firmware_upgrade.service.NewDfuService"/>
+        <service android:label="@string/app_name" android:name="com.iwown.device_module.device_firmware_upgrade.service.DfuService" android:exported="true">
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.action.DFU_UPLOAD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:label="@string/app_name" android:name="com.iwown.device_module.device_firmware_upgrade.service.HardwareUpdateService" android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.iwown.device_module.device_message_push.heart.MyAlarmReceiver"/>
+        <receiver android:name="com.iwown.device_module.device_message_push.heart.MyBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.iwown.device_module.device_alarm_schedule.activity.AlarmScheduleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_alarm_schedule.activity.alarm.AddClockActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_alarm_schedule.activity.week.WeekDaySelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_alarm_schedule.activity.schedule.AddScheduleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_alarm_schedule.activity.AlarmScheduleInfosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_long_sit.activity.LongSeatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_add_sport.activity.AddSupportSportsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_message_push.activity.MsgPushActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_message_push.activity.PackageAllPushActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_operation.search.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_operation.search.HealthScaleConnectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_alarm_schedule.activity.schedule.AddPhoneScheduleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_setting.heart.AutoHeartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_setting.heart.HeartGuidanceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_vibration.VibrationSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_vibration.VibrationModeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_setting.language.LanguageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_setting.gueture.GestureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_setting.backlight.BackLightActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_camera.activity.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_camera.activity.CameraActivity2" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_setting.wifi_scale.activity.WifiUserListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_setting.wifi_scale.activity.AddOrEditUserActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_setting.wifi_scale.activity.WeightDataNotBelongToActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_setting.wifi_scale.activity.QuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_operation.type.DeviceListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_firmware_upgrade.NotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_firmware_upgrade.activity.FirmwareUpgradeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_firmware_upgrade.activity.HardwareUpdateSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.common.activity.DataImportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_guide.DeviceGuideAcitvity"/>
+        <activity android:name="com.iwown.device_module.device_blood.BloodSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_blood.BloodTwoSetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_blood.BloodLastSetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.device_module.device_blood.BloodOldsetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.ProfileMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1104800774"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="EASEMOB_APPKEY" android:value="iwown#zeroner"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:label="@string/app_name" android:name="com.kunekt.healthy.wxapi.WXEntryActivity" android:exported="true"/>
+        <activity android:name="com.iwown.my_module.useractivity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.settingactivity.PersonCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.settingactivity.GoalSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.settingactivity.AppSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.GetbackPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.GetbackPwdByEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.ValidatePhoneEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.RetrievePwdByPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.settingactivity.CustomWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.ChangePwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.settingactivity.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.settingactivity.Link3rdPartyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.profile.NewProfileGenderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.profile.NewProfileHeightActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.profile.NewProfileWeightActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.profile.NewProfileBirthdayActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.profile.ProfileCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.useractivity.profile.TestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.settingactivity.DebugActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.strava.StravaConnectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.strava.StravaLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.googlefit.GoogleFitConnectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.feedback.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.iwown.my_module.feedback.TalkWebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.healthy.HealthyLoginActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.healthy.activity.VerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.healthy.activity.PhoneOrEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.healthy.activity.PhoneOrPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.healthy.activity.IwownShopActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.healthy.bbs.BBSActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.healthy.bbs.BBSLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.healthy.bbs.BBSLossPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.iwown.my_module.healthy.bbs.BBSRegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/PictureTransparent" android:name="com.iwown.my_module.feedback.PictureDisplayActivity"/>
+        <activity android:name="com.iwown.data_link.MainActivity"/>
+        <activity android:name="com.iwown.ble_module.MainActivity"/>
+        <service android:name="com.iwown.ble_module.zg_ble.bluetooth.ZGBleService"/>
+        <service android:name="com.iwown.ble_module.iwown.bluetooth.BleService"/>
+        <service android:name="com.iwown.ble_module.zg_ble.bluetooth.ZGService"/>
+        <service android:name="com.iwown.ble_module.proto.ble.BleService"/>
+        <activity android:name="com.iwown.lib_common.MainActivity"/>
+        <activity android:name="com.iwown.lib_common.ViewDemoActivity"/>
+        <provider android:name="com.dmcbig.mediapicker.utils.DmcFileProvider" android:exported="false" android:authorities="com.healthy.zeroner_pro.dmc" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_dmc_paths"/>
+        </provider>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.dmcbig.mediapicker.PickerActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.dmcbig.mediapicker.PreviewActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.dmcbig.mediapicker.TakePhotoActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/GrantorNoDisplay" android:name="com.github.dfqin.grantor.PermissionActivity"/>
+        <provider android:name="com.tencent.bugly.beta.utils.BuglyFileProvider" android:exported="false" android:authorities="com.healthy.zeroner_pro.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:name="com.tencent.bugly.beta.tinker.TinkerResultService" android:exported="false"/>
+        <service android:name="com.tencent.tinker.lib.service.TinkerPatchService$IntentServiceRunner" android:exported="false" android:process=":patch"/>
+        <service android:name="com.tencent.tinker.lib.service.TinkerPatchService$IntentServiceRunner$InnerService" android:exported="false" android:process=":patch"/>
+        <service android:name="com.tencent.tinker.lib.service.TinkerPatchService$JobServiceRunner" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false" android:process=":patch"/>
+        <service android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService" android:exported="false"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T" android:launchMode="singleTop"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09" android:launchMode="singleTask"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T" android:launchMode="singleTask"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T" android:launchMode="singleTask"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T" android:launchMode="singleTask"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08" android:launchMode="singleInstance"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T" android:launchMode="singleInstance"/>
+        <meta-data android:name="tinker_version" android:value="1.9.6"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:theme="@style/EasyPermissions.Transparent" android:label="" android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" android:exported="false"/>
+        <meta-data android:name="TINKER_ID" android:value="zeronerRelease_base-1.0.18_0831"/>
+        <meta-data android:name="BUGLY_CHANNEL" android:value="zeroner"/>
+    </application>
+</manifest>

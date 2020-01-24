@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp">
+    <TextView android:id="@+id/tv_index" android:text="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_chainStyle="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/tv_pace" app:layout_constraintTop_toTopOf="0" style="@style/sport_run_data_text_item"/>
+    <TextView android:id="@+id/tv_pace" android:text="23&apos;44" app:layout_constraintLeft_toRightOf="@+id/tv_index" app:layout_constraintRight_toLeftOf="@+id/tv_speed" app:layout_constraintTop_toTopOf="@+id/tv_index" style="@style/sport_run_data_text_item"/>
+    <TextView android:id="@+id/tv_speed" android:text="12.22" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintLeft_toRightOf="@+id/tv_pace" app:layout_constraintTop_toTopOf="0" style="@style/sport_run_data_text_item"/>
+    <View android:id="@+id/line" android:background="@color/sport_module_24304B" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintBottom_toBottomOf="0"/>
+</android.support.constraint.ConstraintLayout>

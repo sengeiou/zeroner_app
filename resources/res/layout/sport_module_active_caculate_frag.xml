@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scl" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/top_part_ll" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.iwown.sport_module.view.checkbar.ALinearCheckBar android:id="@+id/check_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                <Gallery android:layout_gravity="center_vertical" android:id="@+id/gallery" android:layout_width="match_parent" android:layout_height="150dp"/>
+            </LinearLayout>
+            <android.support.constraint.ConstraintLayout android:id="@+id/value_cl" android:background="@android:color/transparent" android:paddingLeft="20dp" android:paddingTop="30dp" android:paddingRight="20dp" android:paddingBottom="50dp" android:layout_width="match_parent" android:layout_height="335dp">
+                <View android:id="@+id/horizontal_div_1" android:background="@color/sport_module_60_24304B" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.333"/>
+                <View android:id="@+id/horizontal_div_2" android:background="@color/sport_module_60_24304B" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.666"/>
+                <View android:id="@+id/vertical_div" android:background="@color/sport_module_60_24304B" android:layout_width="1dp" android:layout_height="match_parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+                <RelativeLayout android:id="@+id/step_cell" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/distance_cell" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/exercise_time_cell" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_weight="1">
+                    <include android:id="@+id/step_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_centerVertical="true" layout="@layout/sport_module_active_value_item"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/exercise_time_cell" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/caloria_cell" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toRightOf="@+id/step_cell" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_weight="1">
+                    <include android:id="@+id/exercise_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_centerVertical="true" layout="@layout/sport_module_active_value_item2"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/distance_cell" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/stand_cell" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/caloria_cell" app:layout_constraintTop_toBottomOf="@+id/step_cell" app:layout_constraintVertical_weight="1">
+                    <include android:id="@+id/distance_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_centerVertical="true" layout="@layout/sport_module_active_value_item"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/caloria_cell" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/empty_cell" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toRightOf="@+id/distance_cell" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/exercise_time_cell" app:layout_constraintVertical_weight="1">
+                    <include android:id="@+id/cal_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_centerVertical="true" layout="@layout/sport_module_active_value_item"/>
+                </RelativeLayout>
+                <android.support.constraint.Guideline android:orientation="horizontal" android:id="@+id/guide_line_horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintGuide_percent="0.667"/>
+                <RelativeLayout android:id="@+id/stand_cell" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/empty_cell" app:layout_constraintTop_toBottomOf="@+id/distance_cell" app:layout_constraintVertical_weight="1">
+                    <include android:id="@+id/stand_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_centerVertical="true" layout="@layout/sport_module_active_value_item"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/empty_cell" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toRightOf="@+id/stand_cell" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/caloria_cell" app:layout_constraintVertical_weight="1"/>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

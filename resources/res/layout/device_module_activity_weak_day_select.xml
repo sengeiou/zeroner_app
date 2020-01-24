@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/device_module_common_background_1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iwown.device_module.common.view.checkbox.WeekRepeatCheck android:id="@+id/repeat_every_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    <com.iwown.device_module.common.view.checkbox.WeekRepeatCheck android:id="@+id/repeat_workday" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.iwown.device_module.common.view.checkbox.WeekRepeatCheck android:id="@+id/repeat_weekend" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/blood_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/item_all_layout" android:background="@color/sport_module_1374D4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.google.android.gms.maps.MapView android:id="@+id/my_amap_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.iwown.sport_module.gps.view.SportTrailView android:id="@+id/gps_trail_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:background="#20000000" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:background="@color/sport_module_1374D4" android:layout_width="match_parent" android:layout_height="40dp">
+            <ImageView android:id="@+id/gps_item_back" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@mipmap/back3x" android:layout_centerVertical="true"/>
+            <TextView android:textSize="17dp" android:textColor="@color/white" android:id="@+id/gps_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_module_data" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="150dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.iwown.sport_module.view.MyTextView android:textSize="40dp" android:textColor="#000000" android:id="@+id/his_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00"/>
+            <TextView android:textSize="15dp" android:textColor="#000000" android:id="@+id/map_util" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="" android:layout_toRightOf="@+id/his_distance" android:layout_alignBaseline="@+id/his_distance"/>
+        </RelativeLayout>
+        <TextView android:textSize="14dp" android:textColor="@color/sport_module_999999" android:id="@+id/his_st_ed" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+        <View android:background="@color/sport_module_999999" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="1dp" android:layout_marginTop="5dp" android:layout_marginRight="1dp" android:layout_marginBottom="5dp"/>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="76dp">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <com.iwown.sport_module.view.MyTextView android:textSize="23dp" android:textColor="#000000" android:id="@+id/his_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--:--:--"/>
+                <TextView android:textSize="14dp" android:textColor="@color/sport_module_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_module_gps_duration"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <com.iwown.sport_module.view.MyTextView android:textSize="23dp" android:textColor="#000000" android:id="@+id/his_calore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00"/>
+                <TextView android:textSize="14dp" android:textColor="@color/sport_module_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="kcal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

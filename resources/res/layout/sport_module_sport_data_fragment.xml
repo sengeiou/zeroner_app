@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iwown.sport_module.view.swipetoloadlayout.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:sport_module_swipe_style="3">
+    <RelativeLayout android:id="@+id/imag_rl" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/light" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <com.iwown.sport_module.view.SportRefreshHeader android:id="@+id/sport_module_swipe_refresh_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/sport_module_swipe_target" layout="@layout/sport_module_refresh_header_view"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/sport_module_swipe_target" android:background="@android:color/transparent" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dip_size_10"/>
+</com.iwown.sport_module.view.swipetoloadlayout.SwipeToLoadLayout>

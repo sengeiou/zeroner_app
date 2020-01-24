@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iwown.my_module.widget.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.iwown.my_module.widget.SelectinfoView android:id="@+id/background_permission_setting" android:background="@drawable/common_down_right_bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="45dp" app:labelText="@string/my_module_background_permission"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="1dp">
+            <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+            <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <com.iwown.my_module.widget.SelectinfoView android:id="@+id/change_password_pro" android:background="@drawable/common_down_right_bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="@string/activity_title_resetpass"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="1dp">
+            <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+            <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <com.iwown.my_module.widget.SelectinfoView android:id="@+id/unit_measurement" android:background="@drawable/common_down_right_bg_selector" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="@string/unit_setting"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="1dp">
+            <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+            <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <com.iwown.my_module.widget.SelectinfoView android:id="@+id/temperature_switch" android:background="@drawable/common_down_right_bg_selector" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="@string/temperature_switch"/>
+        <com.iwown.my_module.widget.SelectinfoView android:id="@+id/upload_ble" android:background="@drawable/common_down_right_bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="45dp" app:labelText="@string/my_module_upload_ble"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="1dp">
+            <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+            <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <com.iwown.my_module.widget.SelectinfoView android:id="@+id/app_version" android:background="@drawable/common_down_right_bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="@string/setting_app_update"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="1dp">
+            <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+            <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <com.iwown.my_module.widget.SelectinfoView android:id="@+id/about_app" android:background="@drawable/common_down_right_bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="@string/about_us_title"/>
+        <TextView android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/dfu_desc"/>
+        <com.iwown.my_module.widget.SelectinfoView android:id="@+id/dfu_helper" android:background="@drawable/common_down_right_bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp" app:labelText="@string/setting_firmware_helper"/>
+        <Button android:textColor="@android:color/white" android:id="@+id/btnSignOut" android:background="@drawable/my_module_corner_button" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="30dp" android:layout_marginTop="40dp" android:layout_marginRight="30dp" android:text="@string/sign_out"/>
+    </LinearLayout>
+</com.iwown.my_module.widget.CustomScrollView>

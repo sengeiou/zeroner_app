@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/sport_layout_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iwown.sport_module.view.calendar.SportPopupWindow android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/sport_popup" android:background="@android:color/transparent" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="17dp" android:layout_marginRight="17dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/sport_module_history_calendar_bg1" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <ImageView android:id="@+id/calendar_left" android:layout_width="40dp" android:layout_height="18dp" android:src="@mipmap/calendar_left"/>
+            <TextView android:textSize="18dp" android:textColor="@color/white" android:id="@+id/calendar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text=""/>
+            <ImageView android:id="@+id/calendar_right" android:layout_width="40dp" android:layout_height="18dp" android:src="@mipmap/calendar_right"/>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/calendar_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <com.iwown.sport_module.view.calendar.HistoryCalendar android:id="@+id/calendar_view" android:paddingLeft="6dp" android:paddingRight="6dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:sport_module_colorWeekTitle="@color/white" app:sport_module_colorSelectedCircleBackground="#704da2"/>
+    </com.iwown.sport_module.view.calendar.SportPopupWindow>
+</LinearLayout>

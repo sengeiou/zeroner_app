@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/sport_module_reminder_shape" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:minHeight="30dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/broadcast_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/remind"/>
+    <com.iwown.sport_module.view.scrolltextview.ScrollTextView android:id="@+id/scroll_tv" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/close_reminder" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/shut_down" android:layout_alignParentRight="true"/>
+</LinearLayout>

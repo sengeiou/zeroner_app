@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <EditText android:textSize="17dp" android:textColor="@android:color/white" android:textColorHint="#b4b4b4" android:id="@+id/edt" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/edt_under_line" android:background="@color/find_pwd_edt_underline_color_no" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="5dp" android:layout_below="@+id/edt"/>
+    <ImageView android:id="@+id/img" android:background="@mipmap/see3" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@+id/edt_under_line" android:layout_alignBottom="@+id/edt"/>
+</RelativeLayout>

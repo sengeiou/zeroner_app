@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@color/view_background_color"/>
+    <item android:id="@+id/bt_image" android:bottom="60dp">
+        <bitmap android:gravity="bottom" android:src="@mipmap/app_launch_icon_2x"/>
+    </item>
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/imperial_content" android:layout_width="0dp" android:layout_height="180dp" android:layout_weight="1">
+            <com.iwown.my_module.widget.WheelViewPro android:layout_gravity="center_horizontal" android:id="@+id/picker_value_imperial" android:layout_width="120dp" android:layout_height="match_parent" app:selectedBackground="@drawable/wheelview_selector_bg2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/metric_content" android:layout_width="0dp" android:layout_height="180dp" android:layout_weight="1">
+            <com.iwown.my_module.widget.WheelViewPro android:layout_gravity="center_horizontal" android:id="@+id/picker_value_metric" android:layout_width="120dp" android:layout_height="match_parent" app:selectedBackground="@drawable/wheelview_selector_bg2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="5dp" android:layout_width="0dp" android:layout_height="180dp" android:layout_weight="1">
+            <com.iwown.my_module.widget.WangWheelView android:layout_gravity="center_horizontal" android:id="@+id/picker_unit" android:layout_width="180dp" android:layout_height="match_parent" app:selectedBackground="@drawable/wheelview_selector_bg2"/>
+            <TextView android:textSize="20dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/healthy_hi_unit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="cm"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

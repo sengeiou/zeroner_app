@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#081024" android:paddingTop="25dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15dp" android:textColor="#b5b7bd" android:gravity="center" android:id="@+id/ri_item_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="步频范围" android:layout_weight="2"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+                <View android:background="#5ecf00" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginRight="6dp"/>
+                <TextView android:textSize="15dp" android:textColor="#b5b7bd" android:layout_width="66dp" android:layout_height="wrap_content" android:text="@string/sport_module_excellent"/>
+                <TextView android:textSize="15dp" android:textColor="#898a8d" android:id="@+id/r1_item_excellent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="208ms"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+                <View android:background="#ff8d00" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginRight="6dp"/>
+                <TextView android:textSize="15dp" android:textColor="#b5b7bd" android:layout_width="66dp" android:layout_height="wrap_content" android:text="@string/sport_module_superb"/>
+                <TextView android:textSize="15dp" android:textColor="#898a8d" android:id="@+id/r1_item_superb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="208-240ms"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+                <View android:background="#006cff" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginRight="6dp"/>
+                <TextView android:textSize="15dp" android:textColor="#b5b7bd" android:layout_width="66dp" android:layout_height="wrap_content" android:text="@string/sport_module_good"/>
+                <TextView android:textSize="15dp" android:textColor="#898a8d" android:id="@+id/r1_item_amazing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="240-273ms"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+                <View android:background="#fd00ff" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginRight="6dp"/>
+                <TextView android:textSize="15dp" android:textColor="#b5b7bd" android:layout_width="66dp" android:layout_height="wrap_content" android:text="@string/sport_module_tolerable"/>
+                <TextView android:textSize="15dp" android:textColor="#898a8d" android:id="@+id/r1_item_good" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="273-305ms"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+                <View android:background="#e40000" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginRight="6dp"/>
+                <TextView android:textSize="15dp" android:textColor="#b5b7bd" android:layout_width="66dp" android:layout_height="wrap_content" android:text="@string/sport_module_bad"/>
+                <TextView android:textSize="15dp" android:textColor="#898a8d" android:id="@+id/r1_item_bad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="305ms"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="18dp" android:textColor="#b5b7bd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="15dp" android:text="Tips" android:drawableLeft="@mipmap/r1_tips3x" android:drawablePadding="5dp"/>
+    <TextView android:textSize="14dp" android:textColor="#898a8d" android:id="@+id/r1_tips_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="8dp" android:layout_marginRight="13dp" android:text="步频越高会将体重分担到更多的步伐中，使腿部负担更小，运动损伤发生概率越低。"/>
+</LinearLayout>

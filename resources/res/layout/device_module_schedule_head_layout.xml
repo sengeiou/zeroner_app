@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iwown.device_module.device_alarm_schedule.view.Calendar.View.ZCalenderView android:id="@+id/calendar_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:id="@+id/control_calendar_ll" android:clickable="true" android:layout_width="match_parent" android:layout_height="30dp">
+        <ImageView android:id="@+id/control_calendar_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/open_calendar3x"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/device_module_common_text_color" android:id="@+id/time_tv" android:background="@color/device_module_alarm_1" android:paddingLeft="14dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sport_module_time"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="65dp">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="17dp" android:textColor="@color/text_pressed_selector_schedule" android:gravity="center" android:id="@+id/clock" android:paddingTop="12dp" android:paddingBottom="12dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_module_clock" android:drawableLeft="@drawable/selector_clock_indicator" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="17dp" android:textColor="@color/text_pressed_selector_schedule" android:gravity="center" android:id="@+id/schedule" android:paddingTop="12dp" android:paddingBottom="12dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_module_schedule" android:drawableLeft="@drawable/selector_schedule_indicator" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

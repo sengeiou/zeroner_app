@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/confirm_background" android:layout_width="300dp" android:layout_height="match_parent">
+    <TextView android:textSize="17dp" android:textColor="#4a4b4d" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="42dp" android:text="@string/privacy_tip"/>
+    <TextView android:textSize="15dp" android:textColor="#4a4b4d" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/update_message" android:paddingLeft="14dp" android:paddingTop="17dp" android:paddingRight="14dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="80dp" android:text=""/>
+    <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="20dp" android:textColor="#999999" android:gravity="center" android:id="@+id/update_pop_cancel" android:background="@drawable/update_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/exit" android:layout_weight="1"/>
+        <View android:id="@+id/bottom_div_line" android:background="@color/z_DDDDDD" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="20dp" android:textColor="#0476e6" android:gravity="center" android:id="@+id/update_pop_ok" android:background="@drawable/update_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/agree" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

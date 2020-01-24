@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/device_module_common_background_1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_auto_heart" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.iwown.device_module.common.view.ItemView android:id="@+id/time_period" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/device_module_dip_size_20" android:minHeight="45dp" app:device_module_labelText="@string/device_module_time_period_setting" app:device_module_is_content_visible="true"/>
+        <com.iwown.device_module.common.view.TimeIntervalView android:id="@+id/time_interval_picker_for_back_light" android:background="@color/device_module_common_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/time_period" app:device_module_use_for="2"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

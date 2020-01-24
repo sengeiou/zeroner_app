@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/overseas_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/googlefit_link" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="50dp" app:labelText="@string/google_fit" app:imageResouse="@mipmap/google_fit_2x" app:labelTextColor="@android:color/white"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="1dp">
+            <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+            <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/strava_link" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" app:labelText="@string/strava" app:imageResouse="@mipmap/strava_2x" app:labelTextColor="@android:color/white"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/china_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/qq_link" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="50dp" app:labelText="QQ排行榜" app:imageResouse="@mipmap/qq_link2x" app:labelTextColor="@android:color/white"/>
+        <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp"/>
+        <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/wx_link" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" app:labelText="微信运动排行榜" app:imageResouse="@mipmap/wechat_link2x" app:labelTextColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

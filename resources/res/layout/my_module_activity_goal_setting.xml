@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iwown.my_module.widget.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/dark_theme_background_color" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/sport_rl" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/sport_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/sport3x" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="20dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/sport_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="2dp" android:text="@string/sport" android:layout_toRightOf="@+id/sport_iv"/>
+                <com.iwown.my_module.widget.WithUnitText android:id="@+id/steps_target_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" app:unit_text="steps" app:num_text_size="40dp" app:unit_text_size="14dp" app:unit_left_margin="6dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <SeekBar android:id="@+id/step_seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxHeight="15dp" android:progressDrawable="@drawable/custom_seekbar_bg" android:minHeight="15dp" android:thumb="@mipmap/goal_circle3x" android:paddingStart="8dp"/>
+        <TextView android:textSize="15dp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/sport_suggest_tv" android:background="@mipmap/suggestion_3x" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginTop="10dp" android:text="@string/suggestion"/>
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@+id/weight_rl" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/weight_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/weight3x" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="20dp" android:textColor="@android:color/white" android:id="@+id/weight_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="2dp" android:text="@string/sport_module_weight_activity" android:layout_toRightOf="@+id/weight_iv"/>
+                <com.iwown.my_module.widget.WithUnitText android:id="@+id/weights_target_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" app:unit_text="kg" app:num_text_size="40dp" app:unit_text_size="14dp" app:unit_left_margin="6dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <SeekBar android:id="@+id/weight_seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxHeight="15dp" android:progressDrawable="@drawable/custom_seekbar_bg" android:minHeight="15dp" android:thumb="@mipmap/goal_circle3x" android:paddingStart="8dp"/>
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="10dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bluetips_3x"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="3dp">
+                <TextView android:textSize="20dp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_module_goal_tips"/>
+                <TextView android:textSize="14dp" android:textColor="@color/dark_theme_hint_color" android:layout_gravity="left" android:id="@+id/cur_weight_hint" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/btn_next" android:background="@drawable/my_module_corner_button" android:visibility="gone" android:layout_width="140dp" android:layout_height="40dp" android:layout_marginTop="50dp" android:text="@string/next"/>
+    </LinearLayout>
+</com.iwown.my_module.widget.CustomScrollView>

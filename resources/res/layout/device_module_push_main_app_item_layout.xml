@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.iwown.device_module.common.view.SwitchItme android:id="@+id/swtich_item" android:background="@color/device_module_common_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:device_module_title_switch_item="@string/device_module_palming_gestures" app:device_module_content_switch_item="@string/device_module_palming_gestures_item_tip" app:device_module_is_content_visible="false" app:device_module_show_divide_line="true"/>
+</RelativeLayout>

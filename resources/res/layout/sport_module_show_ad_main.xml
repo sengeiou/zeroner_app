@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/sport_module_e4e5e7" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="17dp" android:textColor="@color/sport_module_4A4B4D" android:gravity="center" android:id="@+id/ad_no_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_module_no_ad_message" android:drawableTop="@mipmap/message_empty_state" android:drawablePadding="16dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

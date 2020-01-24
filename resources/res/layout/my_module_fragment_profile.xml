@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/profile_fragment_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/titlebar_layout" android:background="@drawable/my_module_gradient_bnd" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/mine_title" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/profile_page_title"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginTop="20dp" android:layout_marginBottom="10dp">
+            <TextView android:textSize="28sp" android:textColor="@color/profile_image_color" android:gravity="center" android:id="@+id/person_photo_my" android:background="@mipmap/user_portrait_3x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="E" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="20dp" android:textColor="@android:color/white" android:id="@+id/profile_name" android:layout_width="180dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:text="Maggie Chen" android:singleLine="true" android:layout_toRightOf="@+id/person_photo_my"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_toRightOf="@+id/person_photo_my" android:layout_below="@+id/profile_name">
+                <TextView android:textSize="15dp" android:textColor="@color/edit_label_color" android:layout_gravity="center_vertical" android:id="@+id/edit_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_module_edit_label"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_to_user_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@mipmap/edit_3x"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:id="@+id/enter_feedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/feedback_robot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/robot_no_new3x"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView android:id="@+id/mine_scroll_menu" android:background="@color/dark_theme_background_color" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titlebar_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/profile_goal_setting_view" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="45dp" app:labelText="@string/profile_goal_setting" app:imageResouse="@mipmap/goal_icon_3x" app:labelTextColor="@android:color/white"/>
+            <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/profile_101guide_view" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="45dp" app:labelText="@string/profile_101guide" app:imageResouse="@mipmap/guide101_icon_3x"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="1dp">
+                <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+                <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.iwown.my_module.widget.SelectinfoRightView android:id="@+id/profile_help_view" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="@string/profile_help" app:imageResouse="@mipmap/help_icon_3x"/>
+                <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/feedback_new_txt" android:background="@drawable/my_module_feedback_new" android:layout_width="32dp" android:layout_height="16dp" android:layout_marginRight="29dp" android:text="NEW" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/profile_products_view" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="45dp" app:labelText="@string/profile_products" app:imageResouse="@mipmap/products_icon_3x"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="1dp">
+                <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+                <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/profile_bonus_view" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="@string/my_module_menu_bonus" app:imageResouse="@mipmap/free_sample_3x"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/bonus_spliter" android:layout_width="match_parent" android:layout_height="1dp">
+                <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+                <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/profile_facebook_view" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="@string/profile_facebook" app:imageResouse="@mipmap/follow_icon_3x"/>
+            <com.iwown.my_module.widget.SelectinfoView android:id="@+id/profile_facebook_view_viva" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="Facebook" app:imageResouse="@mipmap/follow_icon_3x" app:secondTitle="More news, discounts and VIP service"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/facebook_splitter" android:layout_width="match_parent" android:layout_height="1dp">
+                <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+                <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <com.iwown.my_module.widget.SelectinfoView android:id="@+id/profile_youtube_view" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="YouTube" app:imageResouse="@mipmap/youtube_3x" app:secondTitle="Check the video tutorials"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/youtube_splitter" android:layout_width="match_parent" android:layout_height="1dp">
+                <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+                <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <com.iwown.my_module.widget.SelectinfoView android:id="@+id/profile_twitter_view" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="Twitter" app:imageResouse="@mipmap/twitter_3x" app:secondTitle="More news, discounts and VIP service"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/twitter_splitter" android:layout_width="match_parent" android:layout_height="1dp">
+                <View android:background="@color/dark_theme_menu_color" android:layout_width="16dp" android:layout_height="match_parent"/>
+                <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/profile_link_view" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" app:labelText="@string/profile_link" app:imageResouse="@mipmap/link_icon_3x"/>
+            <com.iwown.my_module.widget.NewSelectinfoView android:id="@+id/profile_setting_view" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="10dp" android:minHeight="45dp" app:labelText="@string/setting_title" app:imageResouse="@mipmap/setting_icon_3x"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/guide_layout" android:background="@color/guide_background_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginTop="53dp" android:layout_marginBottom="10dp">
+            <ImageView android:gravity="center_vertical" android:id="@+id/guide_robot_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@mipmap/mine_guide_3x" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="15dp" android:textColor="@android:color/white" android:layout_width="130dp" android:layout_height="wrap_content" android:text="@string/my_module_guide_msg" android:layout_toLeftOf="@+id/guide_robot_img" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

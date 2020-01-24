@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/device_module_common_background_1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/device_module_white" android:gravity="center" android:id="@+id/no_weight_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_module_scale_wifi_setting_11" android:drawableTop="@mipmap/no_data_weight" android:layout_centerInParent="true"/>
+    <com.iwown.device_module.common.view.iosStyle.SwipeMenuListView android:id="@+id/wifi_scale_data_not_belong_to" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:minHeight="?android:attr/listPreferredItemHeight"/>
+</RelativeLayout>

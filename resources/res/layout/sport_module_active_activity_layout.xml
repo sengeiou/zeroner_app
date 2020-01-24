@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iwown.sport_module.view.NoScrollViewPager android:id="@+id/today_frag_vp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/calculate_frag_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="1dp" android:layout_above="@+id/check_bar"/>
+    <com.iwown.sport_module.view.checkbar.ALinearCheckBar android:id="@+id/check_bar" android:background="@color/sport_module_081024" android:paddingLeft="55dp" android:paddingTop="16dp" android:paddingRight="55dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <include android:id="@+id/calendar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="320dp" layout="@layout/sport_module_sleep_calendar_layout"/>
+</RelativeLayout>

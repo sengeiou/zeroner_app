@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager android:id="@+id/rvp_hearts" android:clipToPadding="false" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:rvp_flingFactor="0.6" app:rvp_singlePageFling="true"/>
+    <TextView android:id="@+id/tv_calendar_show" android:layout_width="100dp" android:layout_height="30dp" android:layout_marginTop="@dimen/dip_size_16" android:text="" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</android.support.constraint.ConstraintLayout>

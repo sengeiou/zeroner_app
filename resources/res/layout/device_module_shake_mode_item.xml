@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/device_module_common_background" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="16dp" android:textColor="@color/device_module_white" android:id="@+id/blood_item_text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1"/>
+        <ImageView android:id="@+id/blood_item_img" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/blood_item_chose"/>
+    </LinearLayout>
+    <View android:background="@color/device_module_common_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

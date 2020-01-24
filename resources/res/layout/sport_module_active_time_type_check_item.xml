@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iwown.sport_module.view.checkbar.CheckbleItemContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="14dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/time_type_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="step" android:layout_centerInParent="true"/>
+</com.iwown.sport_module.view.checkbar.CheckbleItemContainer>

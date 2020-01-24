@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="14dp" android:textColor="@color/sport_module_999999" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_module_Steps" android:lines="1"/>
+    <com.iwown.sport_module.view.WithUnitText android:id="@+id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/title" android:layout_alignLeft="@+id/title" app:sport_module_unit_text="@string/sport_module_unit_cal" app:sport_module_num_text="" app:sport_module_num_text_size="32dp" app:sport_module_unit_text_size="13dp" app:sport_module_unit_left_margin="3dp" app:sport_module_unit_text_color="@android:color/white" app:sport_module_num_text_color="@android:color/white" app:sport_module_num_font_stype="1"/>
+</RelativeLayout>

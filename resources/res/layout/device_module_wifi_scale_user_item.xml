@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:background="@color/device_module_common_background_1" android:paddingLeft="@dimen/device_module_dip_size_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/device_module_dip_size_60">
+    <ImageView android:layout_gravity="center" android:id="@+id/wifi_scale_user_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/select_the_user"/>
+    <TextView android:textColor="@color/device_module_white" android:layout_gravity="center" android:id="@+id/wifi_scale_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/device_module_dip_size_10"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/sport_coordinator" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:id="@+id/gps_app_bar" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="355dp" android:stateListAnimator="@null">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:title="" app:layout_scrollFlags="13" app:contentScrim="#1374d4" app:collapsedTitleGravity="11" app:expandedTitleGravity="11">
+            <include app:layout_collapseMode="2" app:layout_collapseParallaxMultiplier="1" layout="@layout/sport_module_gps_details_chat"/>
+            <android.support.v7.widget.Toolbar android:id="@+id/sport_tool_bar" android:background="@android:color/transparent" android:paddingTop="26dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="60dp" app:contentInsetStart="0dp" app:contentInsetLeft="0dp" app:layout_collapseMode="1">
+                <include android:visibility="visible" layout="@layout/sport_module_gps_details_toolbar"/>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/detail_add_lay" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v7.widget.RecyclerView android:id="@+id/swipe_target" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

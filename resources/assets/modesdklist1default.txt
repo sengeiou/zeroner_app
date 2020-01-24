@@ -1,0 +1,1 @@
+{"retCode":0,"data":[{"classid":1,"classname":"Bracelet"},{"classid":2,"classname":"Watch"},{"classid":3,"classname":"Scale"},{"classid":4,"classname":"Earphone"},{"classid":5,"classname":"I7B"}],"data_type":2}

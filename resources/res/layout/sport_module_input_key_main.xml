@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/input_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/input_ll" android:background="@color/white" android:layout_width="match_parent" android:layout_height="210dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/input1" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="1" android:layout_weight="1"/>
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/input2" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="2" android:layout_weight="1"/>
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/input3" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="3" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/input4" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="4" android:layout_weight="1"/>
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/input5" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="5" android:layout_weight="1"/>
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/input6" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="6" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/input7" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="7" android:layout_weight="1"/>
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/input8" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="8" android:layout_weight="1"/>
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/input9" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="9" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/inputp" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="." android:layout_weight="1"/>
+            <Button android:textSize="25dp" android:textColor="@android:color/white" android:id="@+id/input0" android:background="@drawable/key_num_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="0" android:layout_weight="1"/>
+            <ImageView android:id="@+id/inputx" android:background="@drawable/key_num_bg" android:padding="18dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@mipmap/key_delete3x" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

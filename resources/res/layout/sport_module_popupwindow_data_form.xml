@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/dip_size_10" android:gravity="center" android:id="@+id/tv_value" android:background="@drawable/data_from_bg_green" android:layout_width="88dp" android:layout_height="wrap_content" android:text="data_from 95538"/>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="48dp">
+    <ImageView android:id="@+id/common_title_img" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="16dp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/common_title_tv" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="45dp" android:layout_weight="1"/>
+    <TextView android:textSize="11dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/select_right_text" android:background="@drawable/select_right_bg" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="20dp" android:text="@string/feedback_has_new"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@mipmap/profile_enter" android:contentDescription="@string/app_name"/>
+</LinearLayout>

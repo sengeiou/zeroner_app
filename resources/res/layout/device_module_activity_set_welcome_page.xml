@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iwown.device_module.common.view.LSettingItem android:id="@+id/set_welcome" android:layout_width="match_parent" android:layout_height="wrap_content" app:device_module_leftText="@string/device_module_welcome_text" app:device_module_LtextColor="@color/device_module_common_text_color" app:device_module_leftTextMarginLeft="10dp" app:device_module_rightStyle="1" app:device_module_isShowRightText="true" app:device_module_rightText="There" app:device_module_rightTextColor="@color/device_module_common_text_color_1"/>
+</android.support.constraint.ConstraintLayout>

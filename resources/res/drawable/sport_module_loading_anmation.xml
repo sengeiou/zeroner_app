@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00000"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00001"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00002"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00003"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00004"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00005"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00006"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00007"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00008"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00009"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00010"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00011"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00012"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00013"/>
+    <item android:duration="800" android:drawable="@mipmap/comp_3_00014"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00015"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00016"/>
+    <item android:duration="100" android:drawable="@mipmap/comp_3_00017"/>
+</animation-list>

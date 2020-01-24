@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/dark_theme_button_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="20dp">
+        <TextView android:textSize="17sp" android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="center" android:id="@+id/web_title" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:layout_centerVertical="true"/>
+        <TextView android:gravity="center" android:id="@+id/button_backward" android:background="@mipmap/back3x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="17sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/button_close" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="12dp" android:text="@string/my_module_close_toolbar" android:singleLine="true" android:layout_toRightOf="@+id/button_backward" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ProgressBar android:id="@+id/webview_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="3dp" android:progressDrawable="@drawable/my_module_webview_bg" style="?android:attr/progressBarStyleHorizontal"/>
+    <WebView android:id="@+id/iwown_privae_view" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

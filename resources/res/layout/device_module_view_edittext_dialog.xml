@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/device_module_dark_theme_background_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <EditText android:textColor="@android:color/white" android:id="@+id/name_edt" android:background="@color/device_module_dark_theme_error_tip_color" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="right" android:id="@+id/btn_cancel" android:background="@color/device_module_dark_theme_button_background_color" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="20dp" android:text="@string/sport_module_cancel" android:layout_alignParentLeft="true"/>
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_save" android:background="@color/device_module_dark_theme_button_background_color" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="20dp" android:text="@string/sport_module_ok" android:layout_alignParentRight="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

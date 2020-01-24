@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="match_parent" android:layout_height="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/video_send_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@mipmap/wrong_feedback3x"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/images_item" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/video_img" android:layout_width="35dp" android:layout_height="35dp" android:src="@mipmap/feedback_video" android:layout_centerInParent="true"/>
+            <TextView android:textSize="11dp" android:textColor="@android:color/white" android:id="@+id/video_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_marginBottom="3dp" android:text="00:05" android:layout_alignBottom="@+id/images_item" android:layout_alignEnd="@+id/images_item"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

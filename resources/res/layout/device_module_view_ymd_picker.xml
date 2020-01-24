@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="#f6f6f6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <TextView android:textColor="#999999" android:id="@+id/cancel" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_module_cancel"/>
+        <TextView android:textSize="18dp" android:textColor="#4a4b4d" android:gravity="center" android:id="@+id/title" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1"/>
+        <TextView android:textColor="#999999" android:id="@+id/confirm" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iwown_save"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="60dp" android:paddingRight="60dp" android:layout_width="match_parent" android:layout_height="180dp">
+        <com.iwown.device_module.common.view.wheelView.WheelViewPro android:id="@+id/day" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_alignParentLeft="true" app:device_module_selectedBackground="@drawable/wheelview_selector_bg2"/>
+        <com.iwown.device_module.common.view.wheelView.WheelViewPro android:id="@+id/month" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_alignParentRight="true" app:device_module_selectedBackground="@drawable/wheelview_selector_bg2"/>
+        <com.iwown.device_module.common.view.wheelView.WheelViewPro android:id="@+id/year" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_alignParentLeft="true" app:device_module_selectedBackground="@drawable/wheelview_selector_bg2"/>
+    </LinearLayout>
+</LinearLayout>

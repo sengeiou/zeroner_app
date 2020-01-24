@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/pho_main" android:layout_width="match_parent" android:layout_height="175dp">
+    <LinearLayout android:id="@+id/pho_can" android:background="@color/dark_theme_error_tip_color" android:layout_width="match_parent" android:layout_height="47dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/pho_cancel" android:background="@drawable/text_bg_selector" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/sport_module_cancel"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/pho_can">
+        <TextView android:textSize="18dp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/photograph" android:background="@drawable/text_bg_selector" android:layout_width="match_parent" android:layout_height="47dp" android:layout_marginLeft="15dp"/>
+        <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="2px" android:layout_marginLeft="10dp"/>
+        <TextView android:textSize="18dp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/photo_album" android:background="@drawable/text_bg_selector" android:layout_width="match_parent" android:layout_height="47dp" android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

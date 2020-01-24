@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="17dp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_module_gps_basic" android:layout_above="@+id/img" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/gps_group" android:layout_centerInParent="true"/>
+    <TextView android:textSize="14dp" android:textColor="@color/sport_module_50_white" android:ellipsize="end" android:gravity="center" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="@string/sport_module_gps_unlimited" android:maxLines="3" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

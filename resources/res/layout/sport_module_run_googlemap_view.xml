@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/map_layout" android:layout_width="match_parent" android:layout_height="400dp">
+    <com.google.android.gms.maps.MapView android:id="@+id/google_map_view" android:layout_width="match_parent" android:layout_height="match_parent" app:uiRotateGestures="false" app:uiTiltGestures="false"/>
+    <ImageView android:id="@+id/data_from_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/data_from_tv" android:background="@drawable/data_blank" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="4dp" android:text="k" android:layout_below="@+id/data_from_icon" android:layout_alignRight="@+id/data_from_icon"/>
+    <ImageView android:id="@+id/to_map_center_btn" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/location3x" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <com.iwown.sport_module.gps.view.SportTrailView android:id="@+id/gps_trailView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

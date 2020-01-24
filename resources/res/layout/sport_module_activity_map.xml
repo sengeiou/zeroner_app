@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/map_all_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/map_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/map_main_layout" android:background="@android:color/transparent" android:paddingLeft="40dp" android:paddingRight="40dp" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/map_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/map_cancel" android:layout_alignParentLeft="true"/>
+        <ImageView android:id="@+id/map_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/map_locate" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.iwown.sport_module.gps.view.GpsMainLayout android:id="@+id/map_msg_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/gps_rnss_ll" android:layout_width="wrap_content" android:layout_height="20dp">
+        <TextView android:textSize="15dp" android:textColor="@android:color/white" android:id="@+id/gps_statues" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GPS"/>
+        <ImageView android:id="@+id/gps_statues_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:src="@mipmap/gps_st0" android:layout_toRightOf="@+id/gps_statues"/>
+    </LinearLayout>
+</RelativeLayout>

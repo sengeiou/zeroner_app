@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/sport_module_four_round_shape_white" android:padding="@dimen/dip_size_5" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/top_item" layout="@layout/sport_module_traning_today_item"/>
+    <View android:background="@color/sport_module_9AA3B9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+    <include android:id="@+id/bottom_item" layout="@layout/sport_module_traning_today_item"/>
+</LinearLayout>

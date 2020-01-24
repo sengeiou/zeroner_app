@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/buttom_bar_group" android:background="@color/z_fafafa" android:layout_width="match_parent" android:layout_height="56dp" android:layout_alignParentBottom="true">
+        <RelativeLayout style="@style/BottomBar">
+            <com.iwown.my_module.widget.TabBarImageBtn android:id="@+id/bottom_data" android:contentDescription="@string/app_name" app:imageResouse="@mipmap/homepage_data_down" app:imageText="@string/sport_module_data" app:imageTextColor="@color/my_module_fragment_tab_theme" style="@style/BottomBarImgBtn"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/BottomBar">
+            <com.iwown.my_module.widget.TabBarImageBtn android:id="@+id/bottom_device" android:contentDescription="@string/app_name" app:imageResouse="@mipmap/homepage_device_up" app:imageText="@string/home_device" app:imageTextColor="@color/my_module_fragment_tab_theme" style="@style/BottomBarImgBtn"/>
+        </RelativeLayout>
+        <RelativeLayout style="@style/BottomBar">
+            <com.iwown.my_module.widget.TabBarImageBtn android:id="@+id/bottom_my" android:contentDescription="@string/app_name" app:imageResouse="@mipmap/homepage_profile_up" app:imageText="@string/profile_page_title" app:imageTextColor="@color/my_module_fragment_tab_theme" style="@style/BottomBarImgBtn"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/line" android:background="@color/devide_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_above="@+id/buttom_bar_group"/>
+    <FrameLayout android:id="@+id/content_area" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/line"/>
+</RelativeLayout>

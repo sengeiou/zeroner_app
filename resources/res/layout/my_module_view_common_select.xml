@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="55dp">
+    <ImageView android:id="@+id/left_imag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@mipmap/start3x"/>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="45dp" android:layout_weight="4">
+        <TextView android:textColor="@android:color/white" android:id="@+id/common_title_tv" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.8" style="@style/SecondaryTextAppearance"/>
+        <TextView android:textSize="10sp" android:textColor="@color/dark_theme_hint_color" android:id="@+id/second_title_tv" android:layout_width="match_parent" android:layout_height="0dp" android:maxWidth="200dp" android:layout_weight="0.6"/>
+    </LinearLayout>
+    <TextView android:textColor="@android:color/white" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/common_input_tv" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="45dp" android:singleLine="true" android:layout_weight="1.5" style="@style/SecondaryTextAppearance"/>
+    <TextView android:textSize="14dp" android:textColor="@android:color/white" android:id="@+id/common_unit" android:paddingLeft="1px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="kg"/>
+    <ImageView android:id="@+id/right_imag" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@mipmap/profile_enter" android:layout_weight="0.5" android:contentDescription="@string/app_name"/>
+</LinearLayout>

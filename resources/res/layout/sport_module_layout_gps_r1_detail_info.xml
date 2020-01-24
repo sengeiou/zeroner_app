@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="2dp" android:layout_below="@+id/data_rl">
+    <com.iwown.sport_module.view.MyTextView android:textSize="25dp" android:textColor="@color/white" android:id="@+id/tv_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1111111" android:layout_centerVertical="true"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/tv_times" android:layout_alignParentRight="true">
+        <com.iwown.sport_module.view.WithUnitText android:id="@+id/calorie_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:sport_module_unit_text="@string/sport_module_calorie_unit_km" app:sport_module_num_text_size="35dp" app:sport_module_unit_text_size="12dp" app:sport_module_unit_left_margin="6dp" app:sport_module_unit_text_color="@color/white" app:sport_module_num_text_color="@color/white"/>
+    </RelativeLayout>
+</RelativeLayout>

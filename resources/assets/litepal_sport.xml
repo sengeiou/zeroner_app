@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="sport_module"></dbname>
+    <version value="10"></version>
+
+    <list>
+        <mapping class="com.iwown.sport_module.gps.data.TB_location"></mapping>
+        <mapping class="com.iwown.sport_module.gps.data.TB_location_down"></mapping>
+        <mapping class="com.iwown.sport_module.gps.data.TB_location_history"></mapping>
+    </list>
+</litepal>

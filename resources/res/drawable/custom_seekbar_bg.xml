@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@android:id/background" android:height="12dp">
+        <shape>
+            <corners android:radius="6dp"/>
+            <solid android:color="@color/goal_seekbar_bg"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="@android:color/transparent"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress" android:height="12dp">
+        <scale android:scaleWidth="100%">
+            <shape android:shape="rectangle">
+                <corners android:radius="6dp"/>
+                <solid android:color="@color/goal_seekbar_progress"/>
+            </shape>
+        </scale>
+    </item>
+</layer-list>

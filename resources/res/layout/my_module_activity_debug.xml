@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iwown.my_module.widget.ShSwitchViewLayout android:id="@+id/ble_log" android:layout_width="match_parent" android:layout_height="45dp" app:lingyi_checkbox="@string/dev_model_blelog"/>
+    <TextView android:id="@+id/debug_txt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

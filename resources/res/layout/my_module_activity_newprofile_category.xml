@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3">
+        <TextView android:id="@+id/vertical_line" android:background="@color/dark_theme_splitter_color" android:layout_width="1dp" android:layout_height="320dp" android:layout_centerInParent="true"/>
+        <TextView android:id="@+id/horizontal_line" android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_centerInParent="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="200dp" android:layout_height="200dp" android:layout_above="@+id/horizontal_line" android:layout_alignRight="@+id/vertical_line" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gender_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@mipmap/gender_last_2x"/>
+            <TextView android:textSize="14sp" android:textColor="#117aff" android:layout_gravity="center_horizontal" android:id="@+id/gender_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gender"/>
+            <TextView android:textSize="26sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/gender_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Female"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="200dp" android:layout_height="200dp" android:layout_above="@+id/horizontal_line" android:layout_alignLeft="@+id/vertical_line" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/height_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@mipmap/height_last_2x"/>
+            <TextView android:textSize="14sp" android:textColor="#26a505" android:layout_gravity="center_horizontal" android:id="@+id/height_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/height"/>
+            <TextView android:textSize="26sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/height_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="5ft32in"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="200dp" android:layout_height="200dp" android:layout_below="@+id/horizontal_line" android:layout_alignRight="@+id/vertical_line" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/weight_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:src="@mipmap/weight_last_2x"/>
+            <TextView android:textSize="14sp" android:textColor="#26a505" android:layout_gravity="center_horizontal" android:id="@+id/weight_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_module_weight_activity"/>
+            <TextView android:textSize="26sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/weight_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="159lbs"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="200dp" android:layout_height="200dp" android:layout_below="@+id/horizontal_line" android:layout_alignLeft="@+id/vertical_line" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/birthday_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:src="@mipmap/birthday_last_2x"/>
+            <TextView android:textSize="14sp" android:textColor="#117aff" android:layout_gravity="center_horizontal" android:id="@+id/birthday_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/birthday"/>
+            <TextView android:textSize="26sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/birthday_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="3/25 2003"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <Button android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/btn_next" android:background="@color/dark_theme_button_background_color" android:layout_width="140dp" android:layout_height="50dp" android:text="@string/next"/>
+    </LinearLayout>
+</LinearLayout>

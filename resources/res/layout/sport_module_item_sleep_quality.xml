@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/dip_size_15" android:paddingBottom="@dimen/dip_size_5" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip_size_15" android:src="@drawable/sleep_short"/>
+    <TextView android:textColor="@color/white" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip_size_10" android:layout_toRightOf="@+id/iv_icon"/>
+    <TextView android:textColor="@color/base_text_color_black_0" android:id="@+id/tv_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip_size_10" android:layout_marginTop="@dimen/dip_size_5" android:layout_marginRight="@dimen/dip_size_15" android:text="@string/sport_module_sleep_quality1" android:layout_toRightOf="@+id/iv_icon" android:layout_below="@+id/tv_title"/>
+    <View android:background="#24304b" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

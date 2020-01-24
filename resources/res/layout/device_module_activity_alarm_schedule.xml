@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dinuscxj.refresh.RecyclerRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/simple_refresh" android:background="@color/device_module_common_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.iwown.device_module.common.view.iosStyle.SwipeMenuListView android:id="@+id/listView_swipeMenu" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="76dp" android:divider="@null"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/phone_schedule_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textColor="@android:color/white" android:id="@+id/add_btn" android:background="@mipmap/btn_selector2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/device_module_dip_size_5"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/phone_sch_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/add_phone_schedule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_module_schedule_sync_phone_schedule"/>
+                <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="@dimen/device_module_dip_size_8"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.dinuscxj.refresh.RecyclerRefreshLayout>

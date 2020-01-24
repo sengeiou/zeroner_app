@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="20sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:text="@string/gender_title"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+            <com.iwown.my_module.widget.WangWheelView android:id="@+id/gender_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/btn_next" android:background="@color/dark_theme_button_background_color" android:layout_width="140dp" android:layout_height="50dp" android:layout_marginTop="90dp" android:text="@string/sport_module_ok"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/below_area" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/gender_on_2x" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/height_line_off_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/line_off_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/height_off_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/height_off_2x" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/height_line_on_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/line_on_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/height_on_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/height_on_2x" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/weight_line_off_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/line_off_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/weight_off_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/weight_off_2x" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/weight_line_on_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/line_on_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/weight_on_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/weight_on_2x" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/birthday_line_off_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/line_off_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/birthday_off_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/birthday_off_2x" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/birthday_line_on_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/line_on_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/birthday_on_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@mipmap/birthday_on_2x" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

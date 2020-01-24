@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/total_info_rl" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+    <ImageView android:id="@+id/img" android:background="@color/sport_module_117AFF" android:layout_width="6dp" android:layout_height="16dp" android:layout_centerVertical="true"/>
+    <TextView android:textSize="15dp" android:textColor="@color/white" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="July 2017" android:layout_toRightOf="@+id/img" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/activities" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4 Activities" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="27.24km" android:layout_toLeftOf="@+id/activities" android:layout_centerVertical="true"/>
+</RelativeLayout>

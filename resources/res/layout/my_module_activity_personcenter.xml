@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iwown.my_module.widget.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.iwown.my_module.widget.SelectinfoView android:id="@+id/nickname_menu" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:minHeight="50dp" app:labelText="@string/hx_friend_name"/>
+            <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:background="@color/dark_theme_menu_color" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="16sp" android:textColor="@android:color/white" android:layout_gravity="left|center_vertical|center_horizontal|center" android:paddingLeft="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/uid_menu_title" android:layout_weight="1"/>
+                <TextView android:textSize="16sp" android:textColor="@android:color/white" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/uid_view" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <com.iwown.my_module.widget.SelectinfoView android:id="@+id/settings_gender" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:minHeight="50dp" app:labelText="@string/gender"/>
+            <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.iwown.my_module.widget.SelectinfoView android:id="@+id/settings_height" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" app:labelText="@string/height"/>
+            <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.iwown.my_module.widget.SelectinfoView android:id="@+id/settings_weight" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" app:labelText="@string/sport_module_weight_activity"/>
+            <View android:background="@color/dark_theme_splitter_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.iwown.my_module.widget.SelectinfoView android:id="@+id/settings_birthday" android:background="@drawable/common_down_right_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" app:labelText="@string/birthday"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.iwown.my_module.widget.CustomScrollView>

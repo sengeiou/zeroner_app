@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp">
+    <TextView android:textColor="@android:color/black" android:id="@+id/check_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="85dp" android:layout_centerVertical="true" style="@style/SecondaryTextAppearance"/>
+    <com.iwown.my_module.widget.ShSwitchView android:id="@+id/check_switch_view" android:layout_width="64dp" android:layout_height="38dp" android:layout_marginTop="5dp" android:layout_marginRight="16dp" android:layout_marginBottom="5dp" android:layout_alignParentRight="true" app:tintColor="#32d567" app:shadowSpace="5dp"/>
+    <View android:background="@color/new_health_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

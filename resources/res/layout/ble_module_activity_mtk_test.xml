@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="15dp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/dev_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手环名称："/>
+    <TextView android:textSize="15dp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/connect_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连接状态：" android:layout_below="@+id/dev_name"/>
+    <TextView android:textSize="15dp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/can_write_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可否写数据: " android:layout_below="@+id/connect_state"/>
+    <Button android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="连接" android:layout_toRightOf="@+id/dev_name"/>
+    <Button android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/disconnet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="断连" android:layout_toRightOf="@+id/connect"/>
+    <Button android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/input_cmd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送指令" android:layout_below="@+id/can_write_data"/>
+    <EditText android:textSize="15dp" android:id="@+id/cmd_edt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/input_cmd" android:layout_alignTop="@+id/input_cmd"/>
+    <TextView android:id="@+id/back_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/input_cmd"/>
+    <Button android:id="@+id/get_device_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取设备信息" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

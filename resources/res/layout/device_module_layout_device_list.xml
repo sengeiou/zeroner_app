@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/device_module_common_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iwown.device_module.common.view.TitleBar android:id="@+id/device_list_title" android:background="@drawable/rect_change_no_corners" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/lv_device_type" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/device_module_dip_size_8" android:layout_marginTop="@dimen/device_module_dip_size_10" android:divider="@null"/>
+</LinearLayout>

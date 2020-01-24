@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/dark_theme_background_color" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:textColor="@drawable/dialog_btn_text_selector" android:id="@+id/cancel_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/sport_module_cancel" android:layout_alignParentLeft="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="50dp" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/textsize_big" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/picker_title_tv" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/birthday"/>
+        </LinearLayout>
+        <Button android:textColor="@drawable/dialog_btn_text_selector" android:id="@+id/ok_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/iwown_save" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.iwown.my_module.widget.DatetimePickerView android:id="@+id/picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

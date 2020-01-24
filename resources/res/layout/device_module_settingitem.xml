@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:id="@+id/rootLayout" android:background="@drawable/bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="48dp">
+    <ImageView android:id="@+id/iv_lefticon" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="16dp" android:layout_centerVertical="true"/>
+    <TextView android:textSize="16sp" android:gravity="center_vertical" android:id="@+id/tv_lefttext" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:maxWidth="@dimen/device_module_dip_size_220" android:layout_toRightOf="@+id/iv_lefticon"/>
+    <FrameLayout android:id="@+id/rightlayout" android:layout_width="36dp" android:layout_height="48dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_righticon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/righticon"/>
+        <android.support.v7.widget.AppCompatCheckBox android:layout_gravity="center" android:id="@+id/rightcheck" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <android.support.v7.widget.SwitchCompat android:layout_gravity="center" android:id="@+id/rightswitch" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <TextView android:textColor="@color/dialog_bt_base_color" android:gravity="center" android:id="@+id/tv_righttext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="1.0.0" android:layout_toLeftOf="@+id/rightlayout"/>
+    <ImageView android:gravity="center" android:id="@+id/firmware_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/firm_new_3x" android:layout_toLeftOf="@+id/tv_righttext" android:layout_centerVertical="true"/>
+    <View android:id="@+id/underline" android:background="@color/device_module_common_line_color" android:layout_width="match_parent" android:layout_height="1.5px" android:layout_marginLeft="16dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

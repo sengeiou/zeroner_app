@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="31dp" android:textStyle="bold" android:textColor="@color/white" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_module_heart_rate"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/heart_top_part_ll" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.iwown.sport_module.view.run.RunHeartChat android:id="@+id/run_heart_view" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="220dp" android:layout_marginTop="10dp"/>
+        <View android:background="@color/sport_module_FF24304B" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="20dp"/>
+        <android.support.constraint.ConstraintLayout android:background="@android:color/transparent" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/avg" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/lowest" layout="@layout/sport_module_active_value_item"/>
+            <include android:id="@+id/lowest" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toRightOf="@+id/avg" app:layout_constraintRight_toLeftOf="@+id/highest" layout="@layout/sport_module_active_value_item"/>
+            <include android:id="@+id/highest" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toRightOf="@+id/lowest" app:layout_constraintRight_toRightOf="0" layout="@layout/sport_module_active_value_item"/>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/heart_part2" android:paddingLeft="20dp" android:paddingTop="30dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <com.iwown.sport_module.view.run.RunHeart51View android:id="@+id/run_heart51_chat" android:visibility="visible" android:layout_width="300dp" android:layout_height="250dp"/>
+        <com.iwown.sport_module.view.run.HeartF151Layout android:id="@+id/run_heart51_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

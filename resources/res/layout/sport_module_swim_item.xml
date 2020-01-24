@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="13dp" android:textColor="@color/sport_module_FFB5B7BD" android:id="@+id/swim_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="2019/1/12 16:23"/>
+    <TextView android:textSize="14dp" android:textColor="@color/sport_module_FFB5B7BD" android:gravity="center" android:id="@+id/swim_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text=""/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="50dp" android:textColor="@color/white" android:id="@+id/swim_msg1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="13dp" android:textColor="@color/sport_module_FFB5B7BD" android:id="@+id/swim_msg1_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="" android:layout_alignBaseline="@+id/swim_msg1" android:layout_toEndOf="@+id/swim_msg1"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+        <include android:id="@+id/swim_msg2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" layout="@layout/sport_module_active_value_item"/>
+        <include android:id="@+id/swim_msg3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40dp" android:layout_alignParentRight="true" layout="@layout/sport_module_active_value_item"/>
+    </RelativeLayout>
+    <View android:background="@color/sport_module_0A1636" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginTop="30dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pool_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout android:id="@+id/swim_data1" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/pool_length" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1.1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/total_step" layout="@layout/sport_module_active_value_item"/>
+            <include android:id="@+id/total_step" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toRightOf="@+id/pool_length" app:layout_constraintRight_toLeftOf="@+id/avg_swolf" layout="@layout/sport_module_active_value_item"/>
+            <include android:id="@+id/avg_swolf" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toRightOf="@+id/total_step" app:layout_constraintRight_toRightOf="0" layout="@layout/sport_module_active_value_item"/>
+        </android.support.constraint.ConstraintLayout>
+        <View android:background="@color/sport_module_0A1636" android:layout_width="match_parent" android:layout_height="12dp"/>
+        <android.support.constraint.ConstraintLayout android:id="@+id/swim_data2" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/total_times" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/avg_times" layout="@layout/sport_module_active_value_item"/>
+            <include android:id="@+id/avg_times" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toRightOf="@+id/total_times" app:layout_constraintRight_toLeftOf="@+id/one_dis" layout="@layout/sport_module_active_value_item"/>
+            <include android:id="@+id/one_dis" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1" app:layout_constraintLeft_toRightOf="@+id/avg_times" app:layout_constraintRight_toRightOf="0" layout="@layout/sport_module_active_value_item"/>
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout android:id="@+id/swim_data3" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/swim_speed" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1.4" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/swim_rate" layout="@layout/sport_module_active_value_item"/>
+            <include android:id="@+id/swim_rate" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1.6" app:layout_constraintLeft_toRightOf="@+id/swim_speed" app:layout_constraintRight_toLeftOf="@+id/speed_none" layout="@layout/sport_module_active_value_item"/>
+            <View android:id="@+id/speed_none" android:layout_width="0dp" android:layout_height="20dp" app:layout_constraintHorizontal_weight="0.2" app:layout_constraintLeft_toRightOf="@+id/swim_rate" app:layout_constraintRight_toRightOf="0"/>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout android:id="@+id/free_layout" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/avg_speed2" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1.4" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/max_speed2" layout="@layout/sport_module_active_value_item"/>
+        <include android:id="@+id/max_speed2" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintHorizontal_weight="1.6" app:layout_constraintLeft_toRightOf="@+id/avg_speed2" app:layout_constraintRight_toLeftOf="@+id/speed_none2" layout="@layout/sport_module_active_value_item"/>
+        <View android:id="@+id/speed_none2" android:layout_width="0dp" android:layout_height="20dp" app:layout_constraintHorizontal_weight="0.2" app:layout_constraintLeft_toRightOf="@+id/max_speed2" app:layout_constraintRight_toRightOf="0"/>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

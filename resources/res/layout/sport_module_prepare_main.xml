@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/total_bg" android:background="#303030" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.iwown.sport_module.view.MyTextView android:textSize="120dp" android:textColor="@color/white" android:id="@+id/down_txt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true"/>
+    <com.iwown.sport_module.view.MyTextView android:textSize="120dp" android:textColor="@color/white" android:id="@+id/down_txt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/cover_view" android:background="#303030" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <View android:layout_width="match_parent" android:layout_height="100dp"/>
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>
